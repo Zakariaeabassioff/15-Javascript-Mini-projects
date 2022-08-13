@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
 
     //Boucle generant la couleur sous format hex et la stockant dans la var ranColor.
     for(let i=0; i<6; i++){
-        randColor += Math.floor(Math.random(hex)*6);
+        randColor += hex[Math.floor(Math.random()*hex.length)];
     }
 
     //Changer le bg du main.
