@@ -1,0 +1,111 @@
+/* Fundamentales */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(210, 36%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.container h1 {
+    text-align: center;
+    letter-spacing: 0.12rem;
+    color: hsl(209, 61%, 16%);
+    margin-bottom: 10px;
+}
+
+.underline{
+    width: 7rem;
+    height: 0.25rem;
+    background-color: hsl(205, 78%, 60%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.review-card{
+    background-color: #fff;
+    text-align: center;
+    letter-spacing: 0.12rem;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.review-card img {
+    margin-bottom: 20px ;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.review-card h3{
+    color: hsl(209, 61%, 16%);
+    font-size: 1.4rem;
+}
+
+.review-card h4{
+    text-transform: uppercase;
+    color: hsl(205, 78%, 60%);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.swippers{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prev-btn, 
+.next-btn{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+
+.prev-btn:hover, 
+.next-btn:hover {
+    color: hsl(209, 61%, 16%);
+}
+
+.rand-btn{
+    padding: 5px 10px;
+    background: hsl(205, 78%, 60%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rand-btn:hover{
+    background: hsl(209, 61%, 16%);
+}
