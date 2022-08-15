@@ -1,0 +1,100 @@
+/* Fundamentales */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* Main */
+.container{
+    width: 70%;
+    margin: 40px auto;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.12rem;
+}
+
+.container .underline{
+    height: 0.22rem;
+    width: 4.5rem;
+    border-radius: 40px;
+    background: #c59d5f;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container .filter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container .filter button {
+    background: #fff;
+    color: #c59d5f;
+    border: 2px solid #c59d5f;
+    margin: 0 10px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .filter button:hover {
+    background: #c59d5f;
+    color: #fff;
+}
+
+.menu-components{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 100px;
+}
+
+.menu-component{
+    height: 220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0.2rem;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.menu-component .component-img {
+    border: 2px solid #c59d5f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-component .component-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.menu-component .component-infos .header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu-component .component-infos #dish-price {
+    color: #c59d5f;
+}
+
+.menu-component .component-infos p {
+    margin: 5px;
+    padding: 5px;
+}
