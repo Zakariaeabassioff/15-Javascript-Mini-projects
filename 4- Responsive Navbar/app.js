@@ -2,7 +2,7 @@
 const navToggle = document.querySelector('.nav-toggle');
 
 //Acceder au deuxieme format de la navbar
-const links = document.querySelector('.nav-links-toggle');
+const links = document.querySelector('.nav-links');
 
 
 navToggle.addEventListener('click', function(){

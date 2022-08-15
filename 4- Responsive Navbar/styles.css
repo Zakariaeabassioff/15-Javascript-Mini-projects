@@ -18,6 +18,11 @@ a{
 }
 
 /* Navbar */
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 
 nav {
     width: 100%;
@@ -28,6 +33,7 @@ nav {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     column-gap: 3rem;
     background-color: aliceblue;
+    
 }
 
 nav h1 {
@@ -83,29 +89,8 @@ nav h1 span {
     display: none;
 }
 
-.nav-links-toggle{
-    padding: 10px 20px;
-    background-color: aliceblue;
-    display: none;
-}
-
-.nav-links-toggle li {
-    padding: 5px;
-    transition: 0.1s;
-    font-weight: 600;
-}
-
-.nav-links-toggle li:hover{
-    background-color: hsl(205, 78%, 60%);
-    border-radius: 10px;
-}
-
-.show-links {
-    display: block;
-}
 
 @media screen and (max-width: 900px) {
-    .nav-links,
     .social-media {
         display: none;
     }
@@ -113,10 +98,41 @@ nav h1 span {
     .nav-toggle{
         display: block;
     }
-}
 
-@media screen and (min-width: 900px){
+    .nav-links{
+        position: absolute;
+        background: aliceblue;
+        height: 15vh;
+        width: 100%;
+        top: 3.9rem;
+        left: -1000px;
+        text-align: left;
+        z-index: 2;
+        padding: 5px 20px;
+        transition: 0.5s ease;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 7px;
+        padding: 0px 10px;
+        border-radius: 20px;
+        transition: 0.1s ease;
+    }
+
+    .nav-links ul li:hover {
+        background: hsl(205, 78%, 60%);
+    }
+
+    .nav-links ul li a:hover {
+        color: #000;
+    }
+
     .show-links {
-        display: none;
+        left: 0;
     }
 }
+
