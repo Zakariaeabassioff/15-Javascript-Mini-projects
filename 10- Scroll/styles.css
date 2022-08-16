@@ -1,0 +1,151 @@
+/* Fundamentales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    position: relative;
+}
+
+/* Navbar */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(imgs/hero-bcg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 0.1rem 10rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 100;
+}
+
+
+nav img {
+    height: 4rem;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.nav-links li a{
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+}
+
+.text-box p {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.text-box button {
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 7px 30px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+/* About us , services, tours sections */
+.About,
+.services,
+.tours{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.About{
+    background-color: antiquewhite;
+}
+
+.services{
+    background-color: aliceblue;
+}
+
+.tours{
+    background-color: antiquewhite;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: hsl(209, 61%, 16%);
+    color: #fff;
+    padding: 40px;
+}
+
+/* Back to top link */
+.scroll-top{
+    position: fixed;
+    right: 1.5rem;
+    bottom: -100%;
+}
+
+.scroll-active {
+    bottom: 2rem !important;
+    transition: 0.3s;
+}
+
+.scroll-top .fas {
+    padding: 8px;
+    bottom: 2rem;
+    color: #fff;
+    background: #000;
+    border-radius: 20px;
+}
+
+/* nav scroll effect */
+.nav-scroll-effect {
+    background: #fff !important;
+}
