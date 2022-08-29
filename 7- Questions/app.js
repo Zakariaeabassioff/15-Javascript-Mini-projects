@@ -23,5 +23,6 @@ minusBtns.forEach(function(btn){
         question.classList.remove('show');
         button.classList.remove('show-btn');
         plusButton.classList.remove('hide-btn');
+        
     });
 });
